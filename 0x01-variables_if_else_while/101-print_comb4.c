@@ -16,7 +16,7 @@ int main(void)
 		{
 			for (k = 0; k < 10; k++)
 			{
-				if (i > j || j > k || i > k)
+				if (i >= j || j >= k || i >= k)
 					continue;
 				putchar(i + 48);
 				putchar(j + 48);
