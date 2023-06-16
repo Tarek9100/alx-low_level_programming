@@ -22,8 +22,11 @@ int main(void)
 					num2 = x * 10 + y;
 					if (num1 > num2)
 					{
-					putchar(num1 + 48);
-					putchar(num2 + 48);
+					putchar(x + 48);
+					putchar(y + 48);
+					putchar(' ');
+					putchar(i + 48);
+					putchar(j + 48);
 					}
 					else
 					continue;
