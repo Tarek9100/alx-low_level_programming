@@ -12,8 +12,10 @@ int main(void)
 
 	for (num = 0; num < 10; num++)
 	{
+	if (num < 9)
 	printf("%d", num);
+	else
+	printf("%d\n", num;
 	}
-	printf('\n');
 	return (0);
 }
