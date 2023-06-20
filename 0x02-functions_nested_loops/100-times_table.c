@@ -20,20 +20,20 @@ void print_times_table(int n)
 		for (j = 1; j < n; j++)
 		{	res = i * j;
 			if (res < 10)
-			printf(",  %d", res);
+			printf(",   %d", res);
 			else if (res < 100)
-			printf(", %d", res);
+			printf(",  %d", res);
 			else
-			printf(",%d", res);
+			printf(", %d", res);
 		}
 		if (n != 0)
-		{
+		{	res = i * j;
 			if (res < 10)
-			printf(",  %d\n", res);
+			printf(",   %d\n", res);
 			else if (res < 100)
-			printf(", %d\n", res);
+			printf(",  %d\n", res);
 			else
-			printf(",%d\n", res);
+			printf(", %d\n", res);
 		}
 		else
 		_putchar('\n');
