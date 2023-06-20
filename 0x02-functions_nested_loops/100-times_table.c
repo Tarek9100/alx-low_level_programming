@@ -26,7 +26,6 @@ void print_times_table(int n)
 			else
 			printf(",%d", res);
 		}
-	}
 		if (n != 0)
 		{
 			if (res < 10)
@@ -38,5 +37,6 @@ void print_times_table(int n)
 		}
 		else
 		_putchar('\n');
+	}
 	}
 }
