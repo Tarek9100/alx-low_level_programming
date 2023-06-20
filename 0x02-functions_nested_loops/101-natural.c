@@ -19,6 +19,7 @@ int main(void)
 		n++;
 	}
 	printf("%ld\n", sum);
+	return (0);
 }
 
 
