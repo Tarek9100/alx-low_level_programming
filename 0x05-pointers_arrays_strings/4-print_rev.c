@@ -7,7 +7,7 @@
 void print_rev(char *s)
 {
 int i;
-i = _strlen(char *s);
+i = _strlen(s);
 while (i >= 0)
 {
 _putchar(s[i]);
