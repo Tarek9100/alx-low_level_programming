@@ -16,4 +16,5 @@ for (; str[h] != '\0'; h++)
 {
 _putchar(str[h]);
 }
+_putchar('\n');
 }
