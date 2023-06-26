@@ -11,7 +11,11 @@ while (str[i] != '\0')
 {
 i++;
 }
+if (i + 1 % 2 != '\0')
+h = (i - 1) / 2;
+else
 h = i / 2;
+h++;
 for (; str[h] != '\0'; h++)
 {
 _putchar(str[h]);
