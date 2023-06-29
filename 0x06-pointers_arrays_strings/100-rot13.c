@@ -22,5 +22,6 @@ else if ((hi[i] >= 'n' && hi[i] <= 'z') || (hi[i] >= 'N' && hi[i] <= 'Z'))
 hi[i] -= 13;
 }
 }
+hi[i] = '\0';
 return (hi);
 }
