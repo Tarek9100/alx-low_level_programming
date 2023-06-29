@@ -10,9 +10,9 @@
 char *leet(char *changed)
 {
 int i, j;
-char low[] = {o, e, a, t, l};
-char high[] = {O, E, A, T, L};
-char num[] = {0, 3, 4, 7, 1};
+char low[] = {'o', 'e', 'a', 't', 'l'};
+char high[] = {'O', 'E', 'A', 'T', 'L'};
+char num[] = {'0', '3', '4', '7', '1'};
 
 for (i = 0; changed[i] != '\0'; i++)
 {
