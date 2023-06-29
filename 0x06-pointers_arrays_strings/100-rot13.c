@@ -10,18 +10,28 @@
 
 char *rot13(char *hi)
 {
-int i;
-for (i = 0; hi[i] != '\0'; i++)
-{
-if ((hi[i] >= 'a' && hi[i] < 'n') || (hi[i] >= 'A' && hi[i] < 'N'))
-{
-hi[i] += 13;
-}
-else if ((hi[i] >= 'n' && hi[i] <= 'z') || (hi[i] >= 'N' && hi[i] <= 'Z'))
-{
-hi[i] -= 13;
-}
-}
-hi[i] = '\0';
-return (hi);
+	int stringCount, rotation;
+	char r1[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+		     'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+		     'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+		     'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+		     'Z'};
+	char r2[] = {'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+		     'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+		     'm', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+		     'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+		     'M'};
+
+	for (stringCount = 0; s[stringCount] != '\0'; stringCount++)
+	{
+		for (rotation = 0; rotation < 53; rotation++)
+		{
+			if (r1[rotation] == s[stringCount])
+			{
+				s[stringCount] = r2[rotation];
+				break;
+			}
+		}
+	}
+	return (s);
 }
