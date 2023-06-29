@@ -2,13 +2,13 @@
 /**
  * rot13 - Write a function that encodes a string using rot13
  *
- * @hi: This is my input string
+ * @s: This is my input string
  *
  * Return: String converted to rot13
  *
  */
 
-char *rot13(char *hi)
+char *rot13(char *s)
 {
 	int stringCount, rotation;
 	char r1[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
