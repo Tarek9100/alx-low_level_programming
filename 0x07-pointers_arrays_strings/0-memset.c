@@ -1,14 +1,14 @@
 /*
-* File: 0-memset.c
-* Auth: Tarek
-*/
+ * File: 0-memset.c
+ * Auth: Tarek
+ */
 
 #include "main.h"
 
 /**
 *_memset - The _memset() function fills
 * the first n bytes of the memory area
-* pointed by s with the constant byte b
+* pointed to s with the constant byte b
 *@s:target
 *@b: constant byte
 *@n:number of byte
@@ -17,10 +17,10 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-while (n)
-{
-s[n - 1] = b;
-n--;
-}
-return (s);
+	while (n)
+	{
+		s[n - 1] = b;
+		n--;
+	}
+	return (s);
 }
