@@ -1,75 +1,71 @@
 #include "3-calc.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
- * op_add - ...
- * @a: ...
- * @b: ...
+ * op_add - Funcions sum two numbers
  *
- * Return: ...
+ * @a: THis is the number 1
+ * @b: This is the number 2
+ *
+ * Return: The result of the sum of two numbers
  */
+
 int op_add(int a, int b)
 {
 	return (a + b);
 }
 
 /**
- * op_sub - ...
- * @a: ...
- * @b: ...
+ * op_sub - Funcions subtracion two numbers
  *
- * Return: ...
+ * @a: THis is the number 1
+ * @b: This is the number 2
+ *
+ * Return: The result of the subtracion of two numbers
  */
+
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
- * op_mul - ...
- * @a: ...
- * @b: ...
+ * op_mul - Funcions multiplaction two numbers
  *
- *  Return: ...
+ * @a: THis is the number 1
+ * @b: This is the number 2
+ *
+ * Return: The result of the multiplation of two numbers
  */
+
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
 
 /**
- * op_div - ...
- * @a: ...
- * @b: ...
+ * op_div - Funcions divition two numbers
  *
- *  Return: ...
+ * @a: THis is the number 1
+ * @b: This is the number 2
+ *
+ * Return: The result of the divition of two numbers
  */
+
 int op_div(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-
 	return (a / b);
 }
 
 /**
- * op_mod - ...
- * @a: ...
- * @b: ...
+ * op_mod - Funcions modulationo of two numbers
  *
- * Return: ...
+ * @a: THis is the number 1
+ * @b: This is the number 2
+ *
+ * Return: The result of the modulation of two numbers
  */
+
 int op_mod(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-
 	return (a % b);
 }
